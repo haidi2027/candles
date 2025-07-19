@@ -1,0 +1,156 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+/* start sidebar */
+#toggle-sidebar{
+    display: none;
+    
+}
+.toggle-sidebar{
+    position: absolute;
+    top: 25px;
+    left: 100px;
+    cursor: pointer;
+}
+.toggle-sidebar span{
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin-bottom: 5px;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    border-radius: 0 30px 30px 0;
+    background-color:#F5EFEB;
+    padding: 20px;
+    transition: right 0.5s;
+    border-right:1px solid black;
+    z-index: 1000;
+}
+#toggle-sidebar:checked + .toggle-sidebar + .sidebar{
+    left: 0;
+}
+body:not(:has(#toggle-sidebar:checked)) .sidebae{
+    left: -250px;
+}
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li{
+    margin-bottom: 10px;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    line-height: 30px;
+    color:#2F4156;
+}
+.sidebar ul li a:hover{
+    color:#2F4156;
+    font-size: large;
+    font-weight: bold;
+}
+/* end sidebar */
+
+/* start nav */
+nav{
+    background-color:#ad9464;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+
+}
+.con1{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ri1{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    padding: 10px;
+}
+.left1{
+    width: 40%;
+    padding-right: 10px;
+    direction: rtl;
+}
+/* end nav */
+.section1{
+    width: 100%;
+    height: 900px;
+    background-color: #EFEBE8;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.con2{
+    width: 90%;
+    height: 100%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.div2{
+    width:90% ;
+    height: 450px;
+    margin: 30px 0;
+    border-radius: 20px;
+    background-color:#c8af81;
+    position: relative;
+}
+/* akmel */
+.shado{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg , black);
+    opacity: 0.4;
+    position: absolute;
+    border-radius: 20px;
+}
+.top1{
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    background-image: url(./IMG/2af885c12a76ff34d38db1ec98fbdc87.jpg);
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    background-size: cover;
+}
+.bottom1{
+    background-color: aqua;
+}
+/* baky akmel */
+.section2{
+    width: 100%;
+    height: 1500px;
+    background-color: #EFEBE8;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.div1{
+    width: 18%;
+    height: 400px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color:#c4b496;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
