@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css6.css">
+</head>
+<body class="body1">
+    <div class="container" id="cartArea">
+    <div class="cart" id="cart"></div>
+    <div class="div2">
+            <h3 style="z-index: 2;">تم إضافة شموع معطره اشكال رباعية <br>برائحة النعناع سلة المشتريات</h3>
+            <img src="./IMG/77ff767e853b8c6ddba14c0fb375e0d5.jpg" alt="" style=" width: 15%; border-radius: 10px;">
+    </div>
+    <div style=" display: flex; justify-content: start; text-align: center;">
+        <h3 style="display: flex; z-index: 2;">تأكيد الحجم</h3>
+        <div class="div1">
+            <label for=""><input type="checkbox" name="option1" value="1"></label><div class="box">كبير</div>
+            <label for=""><input type="checkbox" name="option2" value="2"></label><i class="fa fa-square-check"></i><div class="box">متوسط</div>
+            <label for=""><input type="checkbox" name="option3" value="3"></label><i class="fa fa-square-check"></i></label><div class="box">صغير</div>
+        </div>
+    </div>
+            <div class="div3">
+                <h3>تأكيد العدد</h3>
+            <div class="counter-container">
+            <div class="counter-box" onclick="increment()">+</div>
+            <div class="counter-box number-box" id="number">1</div>
+            <div class="counter-box" onclick="decrement()">−</div>
+            </div>
+    <button onclick="startCart()" class="button1" style="margin: 70px 190px 0 0;">اشتري الآن</button>
+    </div>
+    </div>
+    <div class="message" id="message">
+            تم شراء المنتج بنجاح 💕<br> سوف يصلك المنتج خلال ثلاثة ايام <br>نشكركم على ثقتكم بنا ❤️💕💕<br>
+            <a href="index.html"><button style="width: 30%; height: 20%; background-color: rgba(0, 0, 0, 0); border: 1px solid black; border-radius: 10px; color: black; margin: 20px 10px 0 0;"><h4>الصفحة الرئيسية</h4></button></a>
+    </div>
+    <script>
+        function startCart() {
+            const cart = document.getElementById('cart');
+            const area = document.getElementById('cartArea');
+            const message = document.getElementById('message');
+            const areaWidth = area.offsetWidth;
+            cart.style.left = areaWidth + 'px';
+            setTimeout(() => {
+            message.style.display = 'block';
+            }, 2000); 
+            }
+            let count = 1;
+                function increment() {
+                count++;
+                document.getElementById("number").textContent = count;
+                }
+                function decrement() {
+                if (count > 1) {
+                count--;
+                document.getElementById("number").textContent = count;
+                }
+                }
+    </script>
+</body>
+</html>

@@ -33,6 +33,7 @@ body{
     border-radius: 0 30px 30px 0;
     background-color:#F5EFEB;
     padding: 20px;
+    direction: rtl;
     transition: right 0.5s;
     border-right:1px solid black;
     z-index: 1000;
@@ -64,7 +65,7 @@ body:not(:has(#toggle-sidebar:checked)) .sidebae{
 
 /* start nav */
 nav{
-    background-color:#ad9464;
+    background-color:#bda87d;
     width: 100%;
     height: 80px;
     display: flex;
@@ -95,47 +96,31 @@ nav{
     height: 900px;
     background-color: #EFEBE8;
     display: flex;
+    padding-top: 70px;
     justify-content: center;
     flex-wrap: wrap;
 }
 .con2{
-    width: 90%;
+    width: 80%;
     height: 100%;
-    padding-top: 30px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 .div2{
-    width:90% ;
+    width:80% ;
     height: 450px;
     margin: 30px 0;
     border-radius: 20px;
     background-color:#c8af81;
-    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
-/* akmel */
-.shado{
+.video{
     width: 100%;
-    height: 100%;
-    background-image: linear-gradient(90deg , black);
-    opacity: 0.4;
-    position: absolute;
-    border-radius: 20px;
+    height: 450px;
 }
-.top1{
-    width: 100%;
-    height: 100%;
-    background-color: aquamarine;
-    background-image: url(./IMG/2af885c12a76ff34d38db1ec98fbdc87.jpg);
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    background-size: cover;
-}
-.bottom1{
-    background-color: aqua;
-}
-/* baky akmel */
 .section2{
     width: 100%;
     height: 1500px;
@@ -146,11 +131,169 @@ nav{
 }
 .div1{
     width: 18%;
-    height: 400px;
+    height: 450px;
     margin: 20px;
     border-radius: 20px;
     background-color:#c4b496;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+.div1:hover{
+    width: 20%;
+    height: 480px;
+    border: 2px dashed black;
+}
+.botton1{
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    background-color:#f8e9cc ;
+    color:#452d00;
+    border: 1px solid #452d00;
+}
+.botton1:hover{
+    width: 100px;
+    height: 30px;
+    background-color: wheat;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.footer{
+    width: 100%;
+    height: 500px;
+    background-color:#c6bdaa ;
+    display: flex;
+    justify-content: center;
+}
+.con3{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+.div4{
+    width: 30%;
+    height: 100%;
+    margin: 20px;
+    padding-top: 20px;
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.div5{
+    width: 80%;
+    height: 75%;
+}
+.div5 a{
+    text-decoration: none;
+    color: black;
+}
+.div5 a :hover{
+    color:white;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: larger;
+}
+/* Responsiveness */
+/* medium screen + tablet */
+@media( max-width:1024px) and ( min-width:769px){
+    .toggle-sidebar{
+    left: 30px;
+    }
+    .con1{
+    width:80%;
+    }
+    .section2{
+    width: 100%;
+    height: 100%;
+    }
+    .div1{
+    width: 40%;
+    height: 450px;
+    font-weight: 500;
+    }
+}
+/* phone */
+@media(max-width:768px){
+    .toggle-sidebar{
+    left: 10px;
+    }
+    .con1{
+    width: 90%;
+    }
+    .div2{
+    width:80% ;
+    height: 300px;
+    }
+    .video{
+    width: 100%;
+    height: 300px;
+    }
+    .section2{
+    width: 100%;
+    height: 100%;
+    }
+    .div1{
+    width: 55%;
+    height: 450px;
+    }
+}
+/* small lab */
+@media(min-width:1025px) and (max-width:1250px){
+    .toggle-sidebar{
+    left: 30px;
+    }
+    .con1{
+    width: 90%;
+    }
+    .div2{
+    width:80% ;
+    height: 350px;
+    }
+    .video{
+    width: 100%;
+    height: 350px;
+    }
+    .section2{
+    width: 100%;
+    height: 100%;
+    }
+    .div1{
+    width: 26%;
+    height: 450px;
+    }
+}
+/* large lab */
+@media(min-width:1251px){
+    .toggle-sidebar{
+    left: 80px;
+    }
+    .con1{
+    width: 80%;
+    }
+    .div2{
+    width:80% ;
+    height: 450px;
+    margin-top: 30px;
+    }
+    .video{
+    width: 100%;
+    height: 450px;
+    }
+    .section2{
+    width: 100%;
+    height: 100%;
+    }
+    .div1{
+    width: 18%;
+    height: 450px;
+    }
+    .div1:hover{
+    width: 20%;
+    height: 480px;
+    border: 2px dashed black;
+}
 }

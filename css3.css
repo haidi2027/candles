@@ -1,0 +1,241 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* start nav */
+nav{
+    background-color:#bda87d;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+
+}
+.con1{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ri1{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    padding: 10px;
+}
+.left1{
+    width: 40%;
+    padding-right: 10px;
+    direction: rtl;
+}
+/* end nav */
+.section1{
+    width: 100%;
+    height: 768px;
+    background-color: #EFEBE8 ;
+    display: flex;
+}
+.right2{
+    width: 50%;
+    height: 80%;
+    margin-top: 80px;
+    padding-left: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.left2{
+    width: 50%;
+    height: 100%;
+    margin-top:100px ;
+    direction: rtl;
+    padding: 20px 70px 0 0;
+    position: relative;
+    left: -100%;
+    font-weight: bold;
+    opacity: 0;
+    animation: slideIn 2s forwards;
+}
+@keyframes slideIn {
+    to {
+    left: 0;
+    opacity: 1;
+    }
+}
+.div1{
+    width: 70%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 22%;
+    height: 40px;
+    background-color:#ffecc7;
+    margin: 20px;
+    border: 1px solid  rgb(255, 189, 109);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+.box:hover{
+    background-color: rgb(255, 171, 68);
+}
+.button1{
+    width: 70%;
+    height: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 110px;
+}
+.button2{
+    width: 180px;
+    height: 40px;
+    background-color: #edc371;
+    border: 2px solid  rgb(255, 189, 109);
+    border-radius: 10px;
+}
+.button2:hover{
+    background-color:#ffecc7 ;
+}
+/* Responsiveness */
+/* medium screen + tablet */
+@media( max-width:1024px) and ( min-width:769px){
+    .section1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+    .right2{
+    width: 100%;
+    height: 50%;
+    margin-top: 80px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.left2{
+    width: 100%;
+    height: 50%;
+    margin-top:60px ;
+    font-size: 20px;
+    direction: rtl;
+    padding: 20px 70px 0 0;
+}
+.main-image {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.gallery {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 50px;
+    }
+.button1{
+    width: 70%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 110px;
+}
+}
+/* phone */
+@media(max-width:768px){
+    .section1{
+    width: 100%;
+    height: 100%;
+    flex-direction: column-reverse;
+}
+    .right2{
+    width: 100%;
+    height: 50%;
+    margin-top: 80px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left2{
+    width: 100%;
+    height: 50%;
+    margin-top:60px ;
+    font-size: 20px;
+    direction: rtl;
+    padding: 20px 70px 0 0;
+}
+.main-image {
+    width: 50%;
+    height: 100px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    }
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+    }
+.button1{
+    width: 70%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 110px;
+}
+}
+/* small lab */
+@media(min-width:1025px){
+    .section1{
+    width: 100%;
+    height: 100%;
+}
+    .right2{
+    width: 60%;
+    height: 100%;
+}
+.left2{
+    width: 40%;
+    height: 100%;
+    direction: rtl;
+}
+.main-image {
+    width: 60%;
+    height: 60%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    
+}
+.button1{
+    margin-right: 70px;
+}
+}
